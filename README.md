@@ -76,3 +76,40 @@ Define opciones comunes para todos los contextos (aplicaciones).
 - Configuración de cookies, sessions, etc.
 
 Cada aplicación puede tener su propio META-INF/context.xml que sobrescribe este.
+
+                        ┌──────────────────────────┐
+                        │       server.xml         │
+                        │  - Conectores            │
+                        │  - Hosts                 │
+                        │  - Servicios             │
+                        └───────────┬──────────────┘
+                                    │
+                                    │ Define estructura
+                                    ▼
+                      ┌────────────────────────────┐
+                      │         Host(s)             │
+                      │  (mapean aplicaciones)      │
+                      └───────────┬─────────────────┘
+                                  │
+                                  ▼
+                    ┌──────────────────────────────┐
+                    │       context.xml (global)    │
+                    │   - DataSources               │
+                    │   - Config. comunes apps      │
+                    └───────────┬───────────────────┘
+                                │ Sobrescribible por:
+                                ▼
+                ┌────────────────────────────────────────┐
+                │   WEB-INF/web.xml (por aplicación)     │
+                │  - Servlets, filtros, listeners        │
+                │  - Sesiones, errores, MIME             │
+                └────────────────────────────────────────┘
+
+
+Separado del flujo de ejecución:
+
+                ┌─────────────────────────┐
+                │   tomcat-users.xml      │
+                │  - Usuarios y roles     │
+                │  - Acceso a Manager     │
+                └─────────────────────────┘
