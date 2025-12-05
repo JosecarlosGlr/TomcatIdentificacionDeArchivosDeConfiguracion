@@ -1,13 +1,13 @@
 # Tomcat: Identificación de archivos de configuración
 
 
-1. conf/server.xml
+## 1. conf/server.xml
 
 Es el archivo central de configuración del servidor Tomcat.
 
 ✔️ ¿Qué define?
 
-Conectores (Connectors)
+- Conectores (Connectors)
 
 Puertos HTTP/HTTPS (por defecto 8080)
 
