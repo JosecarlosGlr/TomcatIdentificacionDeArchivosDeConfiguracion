@@ -1,6 +1,6 @@
 # Tomcat: Identificación de archivos de configuración
 
-!(Archivos clave)[https://raw.githubusercontent.com/JosecarlosGlr/TomcatIdentificacionDeArchivosDeConfiguracion/refs/heads/main/3.png]
+![Archivos clave](https://raw.githubusercontent.com/JosecarlosGlr/TomcatIdentificacionDeArchivosDeConfiguracion/refs/heads/main/3.png)
 
 
 ## 1. conf/server.xml
