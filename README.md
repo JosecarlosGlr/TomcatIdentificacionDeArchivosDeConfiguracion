@@ -1,5 +1,7 @@
 # Tomcat: Identificación de archivos de configuración
 
+## Localización de archivos clave de tomcat
+
 ![Archivos clave](https://raw.githubusercontent.com/JosecarlosGlr/TomcatIdentificacionDeArchivosDeConfiguracion/refs/heads/main/3.png)
 
 
