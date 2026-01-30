@@ -52,4 +52,22 @@ Define el contexto de ejecución de las aplicaciones web.
 ## 3. Mapa Visual de Dependencias
 
 El siguiente esquema ilustra la jerarquía de configuración. Los archivos superiores (globales) definen el entorno para los inferiores (específicos).
-![Mapa visual de dependencias de configuración de Tomcat](https://i.imgur.com/g201JpB.png)
+            
+            
+               [ server.xml ] ──────────────────────────┐
+                (Define Puertos, Hilos y Hosts)         │
+                        │                               │
+                        ▼                               │
+                   [ Host ] (ej. localhost)             │
+                        │                               │
+                        ▼                               │
+                 [ APLICACIÓN WEB ] ◄───────────────────┼─── [ context.xml ]
+                        │   ▲                           │    (Recursos DB y Válvulas)
+                        │   │                           │
+                        │   └───────────────────────────┼─── [ web.xml ]
+                        │                                    (MIME types y Sesiones)
+                        │
+                        │   ┌──────────────────────┐
+                        └──►│ tomcat-users.xml     │
+                            │ (Usuarios y Roles)   │
+                            └──────────────────────┘
