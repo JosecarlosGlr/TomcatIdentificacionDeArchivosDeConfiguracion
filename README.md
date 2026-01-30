@@ -1,4 +1,4 @@
-# Ejercicio 2: Identificación de Archivos de Configuración
+# Tomcat identificación de archivos de configuración
 
 ## 1. Localización en el Sistema
 Los archivos de configuración principales de Tomcat se encuentran en el directorio `$CATALINA_HOME/conf`.
